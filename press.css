@@ -1,0 +1,366 @@
+:root {
+  --_color---light-blue: #e0f2ff;
+  --_color---white-color: white;
+  --_color---blue: #4821ab;
+  --_color---pink: #f85c9b;
+  --_color---neon-green: #e5ff54;
+  --blue: #4821ab;
+  --pink: #f85c9b;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: oswald, sans-serif;
+}
+
+body {
+  background: #ffffff;
+}
+
+/* -----------------------
+   Press Section - Carousel
+   ----------------------- */
+.Press-section {
+  background: var(--_color---pink);
+  color: #fff;
+  padding: 60px 0px;
+}
+
+.Press-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.Press-container input[type="radio"] {
+  display: none;
+}
+
+.Press-slides {
+  display: flex;
+  width: 600%; /* 6 slides */
+  transition: transform 0.6s ease;
+  will-change: transform;
+}
+
+.Press-slide {
+  width: calc(100% / 6);
+  flex: 0 0 calc(100% / 6);
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 40px 20px;
+}
+
+.Press-text {
+  flex: 1;
+  padding-left: 10px;
+}
+
+.Press-text .Date {
+  margin-bottom: 12px;
+  letter-spacing: .04em;
+  color: var(--_color---neon-green);
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-left: 0.5rem;
+}
+
+
+/* Press hero title */
+.Press-text h2 {
+  font-size: 4rem;
+  line-height: 1;
+  color: var(--_color---neon-green);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-top: 40px;
+  margin-bottom: 0;
+  letter-spacing: -.64px;
+  width: 520px;
+}
+
+.Press-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Press-image img {
+  max-width: 420px;
+  width: 100%;
+  height: auto;
+  border: 12px solid #fff;
+  border-radius: 6px;
+  display: block;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Navigation container */
+.Press-navigation {
+  position: absolute;
+  top: 80%;
+  left: 0.9rem;
+  right: 906px;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+
+/* Arrows (hidden by default) */
+.Press-navigation label {
+  pointer-events: auto;
+  display: none;
+  background: #fff;
+  color: var(--_color---pink);
+  font-size: 1.6rem;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  user-select: none;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.Press-navigation label:hover {
+  background-color: var(--_color---neon-green);
+  color: var(--_color---blue);
+  transform: translateY(-50%) scale(1.1);
+  transition: all 0.3s ease;
+}
+
+.Press-navigation label {
+  transition: all 0.3s ease;
+}
+
+
+/* Positioning */
+.Press-navigation .Prev {
+  left: 20px;
+}
+
+
+.Press-navigation .Next {
+  right: 20px;
+}
+
+/* To Show only the correct pair */
+#Press1:checked~.Press-navigation .Prev1,
+#Press1:checked~.Press-navigation .Next1 {
+  display: flex;
+}
+
+#Press2:checked~.Press-navigation .Prev2,
+#Press2:checked~.Press-navigation .Next2 {
+  display: flex;
+}
+
+#Press3:checked~.Press-navigation .Prev3,
+#Press3:checked~.Press-navigation .Next3 {
+  display: flex;
+}
+
+#Press4:checked~.Press-navigation .Prev4,
+#Press4:checked~.Press-navigation .Next4 {
+  display: flex;
+}
+
+#Press5:checked~.Press-navigation .Prev5,
+#Press5:checked~.Press-navigation .Next5 {
+  display: flex;
+}
+
+#Press6:checked~.Press-navigation .Prev6,
+#Press6:checked~.Press-navigation .Next6 {
+  display: flex;
+}
+
+
+/* Translate steps */
+#Press1:checked~.Press-slides {
+  transform: translateX(0%);
+}
+
+#Press2:checked~.Press-slides {
+  transform: translateX(-16.6667%);
+}
+
+#Press3:checked~.Press-slides {
+  transform: translateX(-33.3333%);
+}
+
+#Press4:checked~.Press-slides {
+  transform: translateX(-50%);
+}
+
+#Press5:checked~.Press-slides {
+  transform: translateX(-66.6667%);
+}
+
+#Press6:checked~.Press-slides {
+  transform: translateX(-83.3333%);
+}
+
+
+
+/* Latest Post Section */
+.latest-post {
+  background: #fff;
+  padding: 60px 0px;
+  text-align: center;
+}
+
+.wave-wrapper_2 {
+  position: relative;
+  width: 100%;
+  height: 42px;
+  overflow: hidden;
+  line-height: 0;
+  display: flex;
+  z-index: 2;
+  top: -6rem;
+}
+
+.latest-title {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--_color---blue);
+  margin-bottom: 30px;
+}
+
+/* Filter Buttons */
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.filter-buttons .btn {
+  padding: 12px 28px;
+  border: none;
+  border-radius: 40px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: #f2f4ff;
+  color: var(--_color---blue);
+}
+
+.filter-buttons .btn.active {
+  background: var(--_color---blue);
+  color: var(--_color---neon-green);
+}
+
+.filter-buttons .btn:hover {
+  background: var(--_color---pink);
+  color: #fff;
+}
+
+.press-section {
+  background: none;
+  background-color: #ffffff;
+  top: 0.5rem
+}
+
+.pagination {
+  position: relative;
+  top: 42rem;
+}
+
+.footer {
+  margin-top: 39.375rem !important;
+}
+
+
+/* Responsive */
+@media (min-width: 375px) {
+    .mobile-menu-content {
+       left: 16rem;
+        
+    }
+}
+
+@media screen and (max-width:786px) {
+  .navbar {
+    padding: 10px 15px;
+    width: 100%;
+    left: 50%;
+  }
+
+  .Press-container .Date {
+    display: none;
+  }
+
+  .Press-text h2 {
+    font-size: 1.4rem;
+  }
+
+  .Press-navigation {
+    display: none;
+  }
+
+  .pagination {
+    display: none !important;
+  }
+
+  .footer {
+    position: relative;
+    top: 187rem;
+  }
+
+  .footer-logo,
+  .footer-video {
+    display: none;
+  }
+
+}
+
+
+@media screen and (min-width:820px) {
+  .footer {
+    position: relative;
+    bottom: -58rem;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .footer {
+    position: relative;
+    top: 58rem;
+  }
+}
+
+
+@media screen and (max-width:1200px) {
+  .Press-navigation {
+    display: none !important;
+  }
+
+  .footer-video {
+    display: none;
+  }
+}
+
+@media screen and (min-width:1200px) {
+    .footer{
+    position: relative;
+    top: 4rem;
+  } 
+}
+
+

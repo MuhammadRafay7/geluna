@@ -1,0 +1,158 @@
+:root {
+    --_color---light-blue: #e0f2ff;
+    --_color---white-color: white;
+    --_color---blue: #4821ab;
+    --_color---pink: #f85c9b;
+    --_color---neon-green: #e5ff54;
+    --blue: #4821ab;
+    --pink: #f85c9b;
+    --white: #ffffff;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: oswald, sans-serif;
+}
+
+body {
+    background: #ffffff;
+}
+
+.contact {
+    padding: 240px 20px;
+    background: var(--_color---pink);
+}
+
+.contact-container {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact h2 {
+    color: var(--_color---neon-green);
+    letter-spacing: -1.92px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 4rem;
+    max-width: 791px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 96px;
+    line-height: 1;
+    font-weight: 700;
+    animation: neon-flicker 2s infinite alternate;
+}
+
+.contact p {
+    color: var(--_color---neon-green);
+    margin-bottom: 0;
+    max-width: 444px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    line-height: 1.75;
+    font-weight: 400;
+    margin-bottom: 5rem;
+
+
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.name-fields {
+    display: flex;
+    gap: 20px;
+}
+
+.name-fields input {
+    flex: 1;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    background: #fff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #777;
+    font-size: 0.95rem;
+}
+
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    border-color: var(--_color---blue);
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1),
+        0 0 10px rgba(0, 123, 255, 0.4),
+        0 0 20px rgba(255, 0, 150, 0.4);
+
+}
+
+/* Send Button */
+.blob-button {
+    position: relative;
+    left: 15rem;
+    padding: 10px 24px;
+    width: 182px;
+    margin-left: 0.9rem;
+    font-size: 1.2rem;
+}
+
+.footer {
+    margin-top: -130px;
+}
+
+
+
+/* Responsive */
+@media (min-width: 375px) {
+
+      .navbar {
+        padding: 10px 15px;
+        width: 100%;
+        left: 50%;
+    }
+    
+    .mobile-menu-content {
+        left: 16rem;
+
+    }
+
+}
+
+@media screen and (max-width:1200px) {
+  
+
+    
+    .blob-button {
+        position: relative;
+        left: 5rem;
+    }
+
+    .footer-video{
+        display: none;
+    }
+
+    .footer-logo{
+        display: none;
+    }
+
+}
