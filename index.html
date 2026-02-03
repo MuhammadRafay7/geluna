@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geluna Website - Home</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/geluna_favicon.png">
+
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat&family=Cossette+Titre:wght@400;700&family=Delius&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Mulish:wght@200..1000&family=Oswald:wght@200..700&family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cossette+Titre:wght@400;700&family=Delius&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Mulish:wght@200..1000&family=Oswald:wght@200..700&display=swap"
+    rel="stylesheet">
+  <!-- Icons -->
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=celebration" />
+
+
+  <!-- Css Style Sheet Link  -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="reponsive.css">
+</head>
+
+
+<body>
+
+
+  <!-- Video Popup -->
+  <input type="checkbox" id="popup-toggle" checked>
+  <div class="overlay">
+    <div class="popup">
+      <!-- Close button -->
+      <label for="popup-toggle" class="close">&times;</label>
+
+      <video autoplay muted playsinline>
+        <source src="images/popup_video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+
+
+
+  <!-- NAVBAR -->
+
+  <header class="navbar">
+
+
+    <!-- Hamburger Menu Button -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="hamburger">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </label>
+
+    <!-- Left Links -->
+    <nav class="nav-left">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="flavour.html" class="nav-link">Flavour</a>
+    </nav>
+
+    <!-- Center Logo -->
+    <div class="logo-wrapper">
+      <div class="logo">
+        <img src="images/Logoo.png" alt="Geluna Logo">
+        <div class="pink-ball"></div>
+        <div class="ball-shadow"></div>
+      </div>
+    </div>
+
+    <!-- Right Links -->
+    <nav class="nav-right">
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="press.html" class="nav-link">Press</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu">
+      <div class="mobile-menu-content">
+        <a href="index.html" class="mobile-nav-link active">Home</a>
+        <a href="about.html" class="mobile-nav-link">About</a>
+        <a href="flavour.html" class="mobile-nav-link">Flavour</a>
+        <a href="contact.html" class="mobile-nav-link">Contact</a>
+        <a href="press.html" class="mobile-nav-link">Press</a>
+        <a href="cart.html" class="mobile-nav-link">Cart</a>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <!-- Cream background collage -->
+    <div class="hero-visuals">
+      <img src="images/bg_img_1.png" alt="Ice Cream Visual" class="hero-bg-item bg1">
+      <img src="images/bg_img_2.png" alt="Ice Cream Visual" class="hero-bg-item bg2">
+      <img src="images/bg_img_3.png" alt="Ice Cream Visual" class="hero-bg-item bg3">
+      <img src="images/bg_img_4.png" alt="Ice Cream Visual" class="hero-bg-item bg4">
+      <img src="images/bg_img_5.png" alt="Ice Cream Visual" class="hero-bg-item bg5">
+      <img src="images/bg_img_6.png" alt="Ice Cream Visual" class="hero-bg-item bg6">
+    </div>
+
+    <!-- Pink panel -->
+    <div class="hero-panel background-color-pink">
+
+      <!-- Wave image -->
+
+      <div class="wave-wrapper">
+        <img src="images/pink_Wave.png" alt="Wave" class="wave-item">
+        <img src="images/pink_Wave.png" alt="Wave" class="wave-item">
+      </div>
+
+      <!-- Content -->
+      <div class="container home-header-wrapper">
+        <div class="home-heading-title-wrapper">
+          <h1 class="home-heading-title">GLUTEN-FREE<br>ICE CREAM</h1>
+          <h1 class="home-heading-title stroke">GLUTEN-FREE<br>ICE CREAM</h1>
+        </div>
+
+        <div class="home-header-content-wrapper">
+          <p class="home-heading-text">
+            Glace is handcrafted ice cream made with passion and the finest ingredients. Enjoy the art of ice cream.
+          </p>
+          <a href="flavour.html" class="button home-shop-now blob-button">
+            <span class="button-text slider">SHOP NOW</span>
+            <span></span><span></span><span></span><span></span>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </section> <br><br><br><br><br>
+
+
+
+  <!-- PARTNER LOGO MARQUEE  -->
+  <section class="home-partner-logo-wrapper" aria-label="Our partners">
+    <div class="home-partner-track" role="list">
+      <!-- block of logos (one set) -->
+      <div class="home-partner-group" role="presentation">
+        <a class="link-partner-logo" href="#" role="listitem"><img src="images/marquee_theo.png" alt="Theo"
+            class="partner-logo-icon"></a>
+        <img src="images/marquee_star.png" alt="" class="star-icon" aria-hidden="true">
+        <a class="link-partner-logo" href="#" role="listitem"><img src="images/marquee_hues.png" alt="Hues"
+            class="partner-logo-icon"></a>
+        <img src="images/marquee_star.png" alt="" class="star-icon" aria-hidden="true">
+        <a class="link-partner-logo" href="#" role="listitem"><img src="images/marquee_italic.png" alt="Italic"
+            class="partner-logo-icon"></a>
+        <img src="images/marquee_star.png" alt="" class="star-icon" aria-hidden="true">
+        <a class="link-partner-logo" href="#" role="listitem"><img src="images/marquee_cairo.png" alt="Cairo"
+            class="partner-logo-icon"></a>
+        <img src="images/marquee_star.png" alt="" class="star-icon" aria-hidden="true">
+        <a class="link-partner-logo" href="#" role="listitem"><img src="images/marquee_leafe.png" alt="Leafe"
+            class="partner-logo-icon"></a>
+        <img src="images/marquee_star.png" alt="" class="star-icon" aria-hidden="true">
+        <a class="link-partner-logo" href="#" role="listitem"><img src="images/marquee_venice.png" alt="Venice"
+            class="partner-logo-icon"></a>
+      </div>
+
+      <!-- duplicate block to make the scroll seamless -->
+
+      <div class="home-partner-group" role="presentation" aria-hidden="true">
+        <a class="link-partner-logo" href="#"><img src="images/marquee_theo.png" alt="Theo"
+            class="partner-logo-icon"></a>
+        <img src="images/marquee_star.png" alt="" class="star-icon" aria-hidden="true">
+        <a class="link-partner-logo" href="#"><img src="images/marquee_hues.png" alt="Hues"
+            class="partner-logo-icon"></a>
+        <img src="images/marquee_star.png" alt="" class="star-icon" aria-hidden="true">
+        <a class="link-partner-logo" href="#"><img src="images/marquee_italic.png" alt="Italic"
+            class="partner-logo-icon"></a>
+        <img src="images/marquee_star.png" alt="" class="star-icon" aria-hidden="true">
+        <a class="link-partner-logo" href="#"><img src="images/marquee_cairo.png" alt="Cairo"
+            class="partner-logo-icon"></a>
+        <img src="images/marquee_star.png" alt="" class="star-icon" aria-hidden="true">
+        <a class="link-partner-logo" href="#"><img src="images/marquee_leafe.png" alt="Leafe"
+            class="partner-logo-icon"></a>
+        <img src="images/marquee_star.png" alt="" class="star-icon" aria-hidden="true">
+        <a class="link-partner-logo" href="#"><img src="images/marquee_venice.png" alt="Venice"
+            class="partner-logo-icon"></a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SCOOP OF HAPPINESS -->
+  <section class="scoop-section">
+    <div class="scoop-bg-top"></div>
+
+    <div class="scoop-container">
+      <!-- Title -->
+      <div class="scoop-title-wrapper">
+        <h2 class="scoop-title">THE SCOOP OF <br> HAPPINESS</h2>
+      </div>
+
+      <!-- Full circle wrapper -->
+      <div class="circle-wrapper">
+        <!-- Top half -->
+        <div class="half-circle top">
+          <div class="scoop-content">
+            <p class="scoop-text">
+              Hey there, fellow flavor adventurers! At
+              <a href="#" class="highlight">Glace</a>, we’re not just making ice cream,
+              we’re crafting little pockets of pure joy. Life’s too short for boring desserts,
+              so we’re mixing up wild and wonderful flavors that’ll make your tastebuds dance.
+            </p>
+            <img src="images/from_the_glace_with_love_text.png" alt="From Glace With Love" class="scoop-signature">
+          </div>
+        </div>
+
+        <!-- Bottom half -->
+        <div class="half-circle bottom">
+          <div class="scoop-content">
+            <p class="scoop-text" id="scoop-text-2">
+              Hey there, fellow flavor adventurers! At
+              <a href="#" class="highlight">Glace</a>, we’re not just making ice cream,
+              we’re crafting little pockets of pure joy. Life’s too short for boring desserts,
+              so we’re mixing up wild and wonderful flavors that’ll make your tastebuds dance.
+            </p>
+            <img src="images/from_the_glace_with_love_text.png" alt="From Glace With Love" class="scoop-signature"
+              id="Scoop-text-2">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sky background -->
+    <div class="scoop-sky-bg"></div>
+    <!-- Bottom image -->
+    <div class="scoop-bg-bottom"></div>
+
+    <section class="featured-flavours">
+
+      <div class="flavour-container">
+        <!-- Radios -->
+        <input type="radio" name="flavour" id="flavour-1" checked>
+        <input type="radio" name="flavour" id="flavour-2">
+        <input type="radio" name="flavour" id="flavour-3">
+        <input type="radio" name="flavour" id="flavour-4">
+        <input type="radio" name="flavour" id="flavour-5">
+        <input type="radio" name="flavour" id="flavour-6">
+
+        <!-- Cards -->
+        <div class="flavour-cards">
+          <label class="flavour-card" for="flavour-1" id="card-1">
+            <img src="images/strawberry_tub_card_1.png" alt="Strawberry Crumble">
+
+            <h3>Strawberry Crumble</h3>
+            <p>Imagine sun-ripened strawberries, bursting with sweet juiciness, nestled beneath a blanket of golden,
+              buttery crumble</p>
+            <a href="flavour.html" class="button home-shop-now blob-button">
+              <span class="button-text slider">SHOP NOW</span>
+              <span></span><span></span><span></span><span></span>
+            </a>
+          </label>
+          <label class="flavour-card" for="flavour-2" id="card-2">
+            <img src="images/vanilla_tub_card_2.png" alt="Tahitian Vanilla Bean">
+            <h3>Tahitian Vanilla Bean</h3>
+            <p>A uniquely floral and fruity profile of Tahitian vanilla beans creates a velvety, aromatic indulgence in
+              every scoop.</p>
+            <a href="flavour.html" class="button home-shop-now blob-button">
+              <span class="button-text slider">SHOP NOW</span>
+              <span></span><span></span><span></span><span></span>
+            </a>
+          </label>
+          <label class="flavour-card" for="flavour-3" id="card-3">
+            <img src="images/chocolate_tub_card_3.png" alt="Triple Chocolate Blackout Cookie">
+            <h3>Triple Chocolate Blackout Cookie</h3>
+            <p>Decadence redefined: rich dark cocoa, fudgy brownie chunks, and crunchy chocolate cookies all in one
+              scoop.</p>
+            <a href="flavour.html" class="button home-shop-now blob-button">
+              <span class="button-text slider">SHOP NOW</span>
+              <span></span><span></span><span></span><span></span>
+            </a>
+          </label>
+          <label class="flavour-card" for="flavour-4" id="card-4">
+            <img src="images/mint_tub_card_4.png" alt="Mint Chocolate Chip">
+            <h3>Mint Chocolate Chip</h3>
+            <p>Cool, refreshing mint ice cream sprinkled with crisp chocolate chips for a timeless, refreshing delight.
+            </p>
+            <a href="flavour.html" class="button home-shop-now blob-button">
+              <span class="button-text slider">SHOP NOW</span>
+              <span></span><span></span><span></span><span></span>
+            </a>
+          </label>
+          <label class="flavour-card" for="flavour-5" id="card-5">
+            <img src="images/blueberry_tub_card_5.png" alt="Honey Blueberry Lavender">
+            <h3>Honey Blueberry Lavender</h3>
+            <p>Sweet honey swirled with juicy blueberries and fragrant lavender for a calming, floral twist on dessert.
+            </p>
+            <a href="flavour.html" class="button home-shop-now blob-button">
+              <span class="button-text slider">SHOP NOW</span>
+              <span></span><span></span><span></span><span></span>
+            </a>
+          </label>
+          <label class="flavour-card" for="flavour-6" id="card-6">
+            <img src="images/banana_tub_card_6.png" alt="Banana Chocolate Date Shake">
+            <h3>Palm Springs Banana <br>Chocolate Date Shake</h3>
+            <p>Creamy bananas blended with rich chocolate and sweet dates California sunshine in every bite.</p>
+            <a href="flavour.html" class="button home-shop-now blob-button">
+              <span class="button-text slider">SHOP NOW</span>
+              <span></span><span></span><span></span><span></span>
+            </a>
+          </label>
+        </div>
+      </div>
+    </section>
+    <!-- White wave top -->
+    <div class="wave-wrapper_2">
+      <img src="images/white_wave.png" alt="Wave" class="wave-item">
+      <img src="images/white_wave.png" alt="Wave" class="wave-item">
+      <img src="images/white_wave.png" alt="Wave" class="wave-item">
+      <img src="images/white_wave.png" alt="Wave" class="wave-item">
+    </div>
+
+  </section>
+
+  <!-- NUTRITION SECTION -->
+  <section class="nutrition-section">
+
+    <!-- Background -->
+    <div class="nutrition-bg"></div>
+
+    <div class="nutrition-container">
+      <!-- Left Side: Text -->
+      <div class="nutrition-text">
+        <h2 class="nutrition-title">THE GLACE’S NUTRITION</h2>
+        <p class="nutrition-desc">
+          At <span class="purple_glace">Glace</span>, we believe in savoring every moment. While ice cream is a treat,
+          we also understand the importance of balance.
+        </p>
+      </div>
+
+      <!-- Middle Ice Cream Tub -->
+      <div class="nutrition-images">
+        <img src="images/icecream-nutrition-tub.png" alt="Ice Cream Tub" class="nutrition-tub">
+
+        <!-- Floating nutrition bubbles -->
+        <div class="nutrition-bubble bubble1">
+          <span class="calcium">100MG<br>CALCIUM</span>
+        </div>
+        <div class="nutrition-bubble bubble2">
+          <span class="vitamin">0.1 MCG<br>VITAMIN D</span>
+        </div>
+        <div class="nutrition-bubble bubble3">
+          <span class="protein">3 GRAM<br>PROTEIN</span>
+        </div>
+      </div>
+
+      <!-- Spoon Image -->
+      <div class="nutrition-spoon">
+        <img src="images/icecream-nutrition-spoon.png" alt="Ice Cream Spoon">
+      </div>
+    </div>
+
+    <!-- Pink wave bottom -->
+    <div class="wave-wrapper">
+      <img src="images/pink_Wave.png" alt="Wave" class="wave-item">
+      <img src="images/pink_Wave.png" alt="Wave" class="wave-item">
+      <img src="images/pink_Wave.png" alt="Wave" class="wave-item">
+      <img src="images/pink_Wave.png" alt="Wave" class="wave-item">
+      <img src="images/pink_Wave.png" alt="Wave" class="wave-item">
+    </div>
+  </section>
+
+  <!-- HIGHLIGHTS SECTION -->
+  <section class="highlights-section">
+    <div class="highlights-container">
+
+      <!-- Hidden radios -->
+      <input type="radio" name="highlight" id="h1" checked>
+      <input type="radio" name="highlight" id="h2">
+      <input type="radio" name="highlight" id="h3">
+      <input type="radio" name="highlight" id="h4">
+      <input type="radio" name="highlight" id="h5">
+      <input type="radio" name="highlight" id="h6">
+
+      <!-- Left side text -->
+      <div class="highlights-text">
+        <label class="highlight-line" for="h1">
+          <img src="images/marquee_Star.png" alt="Star" class="star-icon">
+          HANDCRAFTED WITH LOVE
+        </label>
+        <label class="highlight-line" for="h2">
+          <img src="images/marquee_Star.png" alt="Star" class="star-icon">
+          UNIQUE FLAVOUR CREATION
+        </label>
+        <label class="highlight-line" for="h3">
+          <img src="images/marquee_Star.png" alt="Star" class="star-icon">
+          PASSION BEHIND EVERY BITE
+        </label>
+        <label class="highlight-line" for="h4">
+          <img src="images/marquee_Star.png" alt="Star" class="star-icon">
+          FINEST PREMIUM INGREDIENTS
+        </label>
+        <label class="highlight-line" for="h5">
+          <img src="images/marquee_Star.png" alt="Star" class="star-icon">
+          UNFORGETTABLE TASTE MOMENTS
+        </label>
+        <label class="highlight-line" for="h6">
+          <img src="images/marquee_Star.png" alt="Star" class="star-icon">
+          FLAVORS THAT AWAKEN YOUR SENSES
+        </label>
+
+
+        <a href="about.html" class="highlight-btn button home-shop-now blob-button">
+          <span class="button-text slider">Learn More</span>
+          <span></span><span></span><span></span><span></span>
+        </a>
+      </div>
+
+      <!-- Right side stacked images -->
+      <div class="highlights-image-stack">
+        <img src="images/highlights_section_img_1.png" alt="Highlights Image 1" class="highlight-img img1">
+        <img src="images/highlights_section_img_2.png" alt="Highlights Image 2" class="highlight-img img2">
+        <img src="images/highlights_section_img_3.png" alt="Highlights Image 3" class="highlight-img img3">
+        <img src="images/highlights_section_img_4.jpg" alt="Highlights Image 4" class="highlight-img img4">
+        <img src="images/highlights_section_img_5.jpg" alt="Highlights Image 5" class="highlight-img img5">
+        <img src="images/highlights_section_img_6.jpg" alt="Highlights Image 6" class="highlight-img img6">
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Scoop of Praise Section -->
+  <section class="Scoop-of-praise">
+
+    <div class="Scoop-container">
+      <h2 class="Scoop-title">Scoop of Praise</h2>
+
+      <div class="Scoop-cards">
+        <!-- Card 1 -->
+        <div id="Scoop-card-1" class="Scoop-card">
+          <p class="Scoop-text">
+            “Glace is pure magic in a scoop! The best ice cream I've ever had.”
+          </p>
+          <img src="images/testimonial_card_1.png" alt="Sarah M" class="scoop-img">
+          <p class="scoop-name">Sarah M</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div id="Scoop-card-2" class="Scoop-card">
+          <p class="Scoop-text">
+            “So creamy and delicious! A must-try for any ice cream lover.”
+          </p>
+          <img src="images/testimonial_card_2.png" alt="Emily K" class="scoop-img">
+          <p class="scoop-name">Emily K</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div id="Scoop-card-3" class="Scoop-card">
+          <p class="Scoop-text">
+            “The flavor combinations are out of this world!”
+          </p>
+          <img src="images/testimonial_card_3.png" alt="Michael R" class="scoop-img">
+          <p class="scoop-name">Michael R</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div id="Scoop-card-4" class="Scoop-card">
+          <p class="Scoop-text">
+            “The unique flavors are incredible. I'm hooked!”
+          </p>
+          <img src="images/testimonial_card_4.png" alt="David L" class="scoop-img">
+          <p class="scoop-name">David L</p>
+        </div>
+
+        <!-- Card 5 -->
+        <div id="Scoop-card-5" class="Scoop-card">
+          <p class="Scoop-text">
+            “My kids and I absolutely love Glace! It's our new favorite treat.”
+          </p>
+          <img src="images/testimonial_card_5.png" alt="Jessica P" class="scoop-img">
+          <p class="scoop-name">Jessica P</p>
+        </div>
+
+
+        <!-- Card 6 -->
+        <div id="Scoop-card-6" class="Scoop-card">
+          <p class="Scoop-text">
+            “We tried Glace during a picnic, and honestly, it disappeared too fast!”
+          </p>
+          <img src="images/testimonial_card_6.jpg" alt="Jessica P" class="scoop-img">
+          <p class="scoop-name">Ryan </p>
+        </div>
+
+
+        <!-- Card 7 -->
+        <div id="Scoop-card-7" class="Scoop-card">
+          <p class="Scoop-text">
+            “We discovered Glace together, and now it’s our go-to snack for every weekend!”
+          </p>
+          <img src="images/testimonial_card_7.jpg" alt="Jessica P" class="scoop-img">
+          <p class="scoop-name"> Mia</p>
+        </div>
+
+
+        <!-- Card 8 -->
+        <div id="Scoop-card-8" class="Scoop-card">
+          <p class="Scoop-text">
+            “Our afternoons are now incomplete without Glace. Best treat ever!”
+          </p>
+          <img src="images/testimonial_card_8.jpg" alt="Jessica P" class="scoop-img">
+          <p class="scoop-name"> Olivia</p>
+        </div>
+
+
+        <!-- Card 9 -->
+        <div id="Scoop-card-9" class="Scoop-card">
+          <p class="Scoop-text">
+            “Every time we hang out, Glace is a must-have. It’s absolutely amazing!”
+          </p>
+          <img src="images/testimonial_card_9.jpg" alt="Jessica P" class="scoop-img">
+          <p class="scoop-name">Sophia </p>
+        </div>
+
+
+        <!-- Card 10 -->
+        <div id="Scoop-card-10" class="Scoop-card">
+          <p class="Scoop-text">
+            “Glace has become my go-to snack; I can’t get enough of it!”
+          </p>
+          <img src="images/testimonial_card_10.jpg" alt="Jessica P" class="scoop-img">
+          <p class="scoop-name">Aisha </p>
+        </div>
+
+        <!-- Pink wave bottom -->
+        <div class="wave-wrapper_3">
+          <img src="images/pink_Wave.png" alt="Wave" class="wave-item">
+          <img src="images/pink_Wave.png" alt="Wave" class="wave-item">
+          <img src="images/pink_Wave.png" alt="Wave" class="wave-item">
+          <img src="images/pink_Wave.png" alt="Wave" class="wave-item">
+          <img src="images/pink_Wave.png" alt="Wave" class="wave-item">
+          <img src="images/pink_Wave.png" alt="Wave" class="wave-item">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------- OUR STORES  ---------- -->
+  <section class="stores-section">
+    <!-- White wave top -->
+    <div class="wave-wrapper_3">
+      <img src="images/white_wave_1.png" alt="Wave" class="wave-item">
+      <img src="images/white_wave_1.png" alt="Wave" class="wave-item">
+      <img src="images/white_wave_1.png" alt="Wave" class="wave-item">
+      <img src="images/white_wave_1.png" alt="Wave" class="wave-item">
+    </div>
+    <h2 class="stores-heading">OUR STORES</h2>
+    <div class="stores-container">
+
+      <!-- radios -->
+      <input type="radio" name="store" id="s1" checked>
+      <input type="radio" name="store" id="s2">
+      <input type="radio" name="store" id="s3">
+      <input type="radio" name="store" id="s4">
+      <input type="radio" name="store" id="s5">
+      <input type="radio" name="store" id="s6">
+      <input type="radio" name="store" id="s7">
+      <input type="radio" name="store" id="s8">
+
+      <!-- LEFT: stacked visuals -->
+      <div class="stores-visuals" aria-hidden="true">
+        <img src="images/store_img_1.jpg" alt="Vancouver Store" class="store-img img1">
+        <img src="images/store_img_2.jpg" alt="Calgary Store" class="store-img img2">
+        <img src="images/store_img_3.jpg" alt="Ottawa Store" class="store-img img3">
+        <img src="images/store_img_4.jpeg" alt="Montréal Store" class="store-img img4">
+        <img src="images/store_img_5.jpg" alt="Toronto Store" class="store-img img5">
+        <img src="images/store_img_6.jpg" alt="Edmonton Store" class="store-img img6">
+        <img src="images/ice_cream_shop_5.jpg" alt="Quebec City Store" class="store-img img7">
+        <img src="images/store_img_8.jpg" alt="Winnipeg Store" class="store-img img8">
+      </div>
+
+      <!-- RIGHT: accordion -->
+      <div class="stores-accordion">
+
+        <div class="store-item" data-id="s1">
+          <label for="s1" class="store-title">
+            <span class="city">VANCOUVER</span>
+            <span class="symbol"></span>
+          </label>
+          <div class="store-details">
+            <p>456 Frostbite Avenue, Vancouver, BC, V6Z 2Y9</p>
+            <p>(604) 123-4567</p>
+          </div>
+        </div>
+
+        <div class="store-item" data-id="s2">
+          <label for="s2" class="store-title">
+            <span class="city">CALGARY</span>
+            <span class="symbol"></span>
+          </label>
+          <div class="store-details">
+            <p>123 Ice Cream St, Calgary, AB, T2P 1J9</p>
+            <p>(403) 555-7823</p>
+          </div>
+        </div>
+
+        <div class="store-item" data-id="s3">
+          <label for="s3" class="store-title">
+            <span class="city">OTTAWA</span>
+            <span class="symbol"></span>
+          </label>
+          <div class="store-details">
+            <p>789 Maple Road, Ottawa, ON, K1P 5N4</p>
+            <p>(613) 555-9021</p>
+          </div>
+        </div>
+
+        <div class="store-item" data-id="s4">
+          <label for="s4" class="store-title">
+            <span class="city">MONTRÉAL</span>
+            <span class="symbol"></span>
+          </label>
+          <div class="store-details">
+            <p>234 Sweet Ave, Montréal, QC, H2X 3L2</p>
+            <p>(514) 555-3489</p>
+          </div>
+        </div>
+
+        <div class="store-item" data-id="s5">
+          <label for="s5" class="store-title">
+            <span class="city">TORONTO</span>
+            <span class="symbol"></span>
+          </label>
+          <div class="store-details">
+            <p>100 Queen St W, Toronto, ON, M5H 2N2</p>
+            <p>(416) 555-2244</p>
+          </div>
+        </div>
+
+        <div class="store-item" data-id="s6">
+          <label for="s6" class="store-title">
+            <span class="city">EDMONTON</span>
+            <span class="symbol"></span>
+          </label>
+          <div class="store-details">
+            <p>876 Jasper Ave, Edmonton, AB, T5J 3S9</p>
+            <p>(780) 555-6678</p>
+          </div>
+        </div>
+
+        <div class="store-item" data-id="s7">
+          <label for="s7" class="store-title">
+            <span class="city">QUEBEC CITY</span>
+            <span class="symbol"></span>
+          </label>
+          <div class="store-details">
+            <p>50 Rue Saint-Paul, Québec, QC, G1K 3V1</p>
+            <p>(418) 555-8890</p>
+          </div>
+        </div>
+
+        <div class="store-item" data-id="s8">
+          <label for="s8" class="store-title">
+            <span class="city">WINNIPEG</span>
+            <span class="symbol"></span>
+          </label>
+          <div class="store-details">
+            <p>200 Portage Ave, Winnipeg, MB, R3C 3X2</p>
+            <p>(204) 555-3311</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Blog / Press Section -->
+  <section class="press-section">
+    <h2 class="section-title">SWEETAHOLIC’S PRESS</h2>
+    <div class="cards-container">
+      <!-- Card 1 -->
+      <div class="blog-card blog1">
+        <img src="images/press_img_1.jpg" alt="Blog 1">
+        <div class="date">Feb 28</div>
+        <div class="card-content">
+          <h3>SOURCING THE FINEST INGREDIENTS</h3>
+          <div class="line"></div>
+          <div class="category">Facts</div>
+          <p>Discover how we carefully source only the highest quality ingredients to ensure excellence in every
+            creation.</p>
+          <a href="press.html" class=" read-btn button home-shop-now blob-button">
+            <span class="button-text slider">Read More</span>
+            <span></span><span></span><span></span><span></span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="blog-card blog2">
+        <img src="images/press_img_2.png" alt="Blog 2">
+        <div class="date">Mar 26</div>
+        <div class="card-content">
+          <h3>OUR NEWEST SEASONAL CREATION</h3>
+          <div class="line"></div>
+          <div class="category">News</div>
+          <p>We are excited to introduce our newest seasonal creation, crafted with flavors that celebrate the season.
+          </p>
+          <a href="press.html" class=" read-btn button home-shop-now blob-button">
+            <span class="button-text slider">Read More</span>
+            <span></span><span></span><span></span><span></span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="blog-card">
+        <img src="images/press_img_3.jpg" alt="Blog 3">
+        <div class="date">Mar 20</div>
+        <div class="card-content">
+          <h3>ELEVATE YOUR DESSERT GAMES</h3>
+          <div class="line"></div>
+          <div class="category">Ideas</div>
+          <p>Learn creative ways to bring elegance and excitement to your dessert presentations like never before.</p>
+          <a href="press.html" class=" read-btn button home-shop-now blob-button">
+            <span class="button-text slider">Read More</span>
+            <span></span><span></span><span></span><span></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scoop Us Out Online Section -->
+  <section class="scoop-online">
+    <h2 class="scoop-title-2">SCOOP US <br> OUT ONLINE</h2>
+    <div class="scoop-slider">
+      <div class="scoop-track">
+        <!-- First set -->
+        <img src="images/social_img_1.png" alt="Social 1" class="tilt tilt-1">
+        <img src="images/social_img_2.png" alt="Social 2" class="tilt tilt-2">
+        <img src="images/social_img_3.png" alt="Social 3" class="tilt tilt-3">
+        <img src="images/social_img_4.png" alt="Social 4" class="tilt tilt-4">
+
+        <!-- Duplicate set for smooth infinite scroll -->
+        <img src="images/social_img_1.png" alt="Social 1" class="tilt tilt-1">
+        <img src="images/social_img_2.png" alt="Social 2" class="tilt tilt-2">
+        <img src="images/social_img_3.png" alt="Social 3" class="tilt tilt-3">
+        <img src="images/social_img_4.png" alt="Social 4" class="tilt tilt-4">
+      </div>
+    </div>
+
+    <!-- Follow button -->
+    <a href="https://www.instagram.com/" target="_blank" class="follow-btn">FOLLOW @GLACE</a>
+
+
+  </section>
+
+
+  <!-----------  Footer Section --------->
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Newsletter -->
+      <div class="footer-newsletter">
+        <h3>SUBSCRIBE TO OUR NEWSLETTER</h3>
+        <form action="#thanks" class="newsletter-form">
+          <input type="email" placeholder="Email address" required>
+          <button type="submit">SUBMIT</button>
+        </form>
+
+        <!-- Message box -->
+        <div id="thanks" class="thank-you-msg">
+          <span class="material-symbols-outlined">celebration</span> Your subscription is confirmed. Welcome aboard!.
+        </div>
+
+        <!-- Social Icons -->
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/" target="_blank"><img src="images/social_icon_1.png" alt="Instagram"></a>
+          <a href="https://www.tiktok.com" target="_blank"><img src="images/social_icon_2.png" alt="TikTok"></a>
+          <a href="https://www.facebook.com" target="_blank"><img src="images/social_icon_3.png" alt="YouTube"></a>
+          <a href="https://x.com" target="_blank"><img src="images/social_icon_4.png" alt="Twitter"></a>
+        </div>
+      </div>
+
+
+      <!-- Footer Links -->
+      <div class="footer-links">
+        <div class="footer-column">
+          <h4>MAIN PAGE</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="flavour.html">Flavour</a></li>
+            <li><a href="cart.html">Cart</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>COMPANY</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="press.html">Press</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Footer Bottom Logo + Credits -->
+    <div class="footer-bottom">
+      <img src="images/Footer_logo.png" alt="Geluna Logo" class="footer-logo">
+      <p>© 2025 Copyright – Glace Ice Cream. All Rights Reserved.
+
+      </p>
+    </div>
+
+
+
+    <!-- Footer video block -->
+    <div class="footer-video">
+      <video autoplay muted loop playsinline>
+        <source src="images/footer_video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+  </footer>
+
+
+
+
+</body>
+
+</html>

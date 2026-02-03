@@ -1,0 +1,603 @@
+:root {
+  --_color---light-blue: #e0f2ff;
+  --_color---white-color: white;
+  --_color---blue: #4821ab;
+  --_color---pink: #f85c9b;
+  --_color---neon-green: #e5ff54;
+  --blue: #4821ab;
+  --pink: #f85c9b;
+  --white: #ffffff;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: oswald, sans-serif;
+}
+
+body {
+  background: #ffffff;
+}
+
+/* Flavours Hero Section */
+.flavours-hero {
+  height: 120vh;
+  background: url('images/flavour_hero_bg.png') center/cover no-repeat;
+  width: 100%;
+}
+
+
+
+/* Flavours Section */
+.Flavours-section {
+  padding: 4rem 2rem;
+  background: #fff;
+  text-align: center;
+}
+
+.Flavours-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Search Bar */
+.Search-bar {
+  padding: 0.6rem 1rem;
+  border-radius: 20px;
+  border: 1px solid #d0cccc;
+  flex: 1;
+  max-width: 300px;
+  outline: none;
+}
+
+.Search-bar:focus {
+  border-color: rgb(127, 204, 229);
+}
+
+.Search-bar:focus::placeholder {
+  color: var(--_color---blue);
+}
+
+/* Filter Buttons */
+.Filter-btns {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.Filter-btn {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  background: var(--_color---blue);
+  color: #fff;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.Filter-btn:hover {
+  color: var(--_color---blue);
+  background: var(--_color---light-blue);
+}
+
+/* Product Cards */
+.Flavours-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.Flavour-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  width: 400px;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.Flavour-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  position: relative;
+  top: 3rem;
+}
+
+.Flavour-card h3 {
+  position: relative;
+  top: 2rem;
+  margin: 0.5rem 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--_color---blue)
+}
+
+
+
+.Flavour-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Shop Button */
+.Shop-btn {
+  position: relative;
+  display: inline-block;
+  padding: 0.7rem 1.2rem;
+  border-radius: 30px;
+  background: var(--_color---pink);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
+  top: 3rem;
+}
+
+/* New Arrival Products marquee */
+.Has-marquee {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.Marquee {
+  background: var(--_color---pink);
+  padding: 0.3rem 0.8rem;
+  margin-top: -1rem;
+  margin-bottom: 3rem;
+  overflow: hidden;
+}
+
+.Track {
+  display: flex;
+  width: max-content;
+  animation: scroll 12s linear infinite;
+}
+
+.Item {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+  color: #fff;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.Item img {
+  width: 16px;
+  margin-right: 0.3rem;
+  position: relative;
+  top: 0.5rem;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.highlight-btn {
+  width: 267px;
+  text-align: center;
+  margin-top: 45px;
+  margin-left: 5px;
+}
+
+/* card 1 */
+#C-1 {
+  background-color: rgb(238, 196, 208);
+}
+
+#C-1 h3 {
+  color: #940646;
+  margin-top: 3rem;
+}
+
+
+#C-1 .blob-button {
+  background-color: #940646;
+  color: rgb(241 186 198);
+}
+
+
+#C-1 .blob-button {
+  --c: rgb(223, 149, 165);
+  color: rgb(223, 149, 165);
+}
+
+#C-1 .blob-button:hover {
+  color: #940646;
+}
+
+/* card 2 */
+#C-2 {
+  position: relative;
+  background-color: rgb(248 232 179);
+}
+
+
+.flavour-2 {
+  position: relative;
+  bottom: 0rem;
+}
+
+#C-2 h3 {
+  top: 4.5rem;
+  color: #8f4408;
+}
+
+
+#C-2 .blob-button {
+  bottom: -2.5rem;
+  background-color: rgb(190, 114, 47);
+  color: rgb(248 232 179);
+}
+
+#C-2 .blob-button:hover {
+  --c: rgb(224, 206, 144);
+  color: rgb(190, 114, 47);
+}
+
+/* card 3 */
+#C-3 {
+  position: relative;
+  background-color: rgb(215 141 129)
+}
+
+#C-3 h3 {
+  top: 3rem;
+  width: 15rem;
+  margin: 0 auto;
+  color: black;
+}
+
+
+#C-3 .blob-button {
+  top: 2rem;
+  background-color: black;
+  color: rgb(215 141 129);
+}
+
+#C-3 .blob-button:hover {
+  --c: rgb(192, 119, 107);
+  color: black;
+}
+
+/* card 4 */
+#C-4 {
+  background-color: rgb(163 221 194);
+}
+
+#C-4 h3 {
+  color: rgb(137 75 25);
+  top: 2.5rem;
+}
+
+
+#C-4 .blob-button {
+  background-color: rgb(137 75 25);
+  color: rgb(163 221 194);
+  top: 1rem;
+}
+
+#C-4 .blob-button:hover {
+  --c: rgb(128, 208, 171);
+  color: rgb(137 75 25);
+}
+
+/* card 5 */
+#C-5 {
+  background-color: #e2fbff;
+}
+
+#C-5 h3 {
+  color: rgb(159 81 167);
+  top: 2.5rem;
+}
+
+
+#C-5 .blob-button {
+  background-color: rgb(159 81 167);
+  color: #e2fbff;
+  top: 1rem;
+}
+
+#C-5 .blob-button:hover {
+  --c: #90c6ce;
+  color: rgb(159 81 167);
+}
+
+/* card 6 */
+#C-6 {
+  background-color: rgb(248 232 179);
+}
+
+#C-6 h3 {
+  width: 15rem;
+  margin: 0 auto;
+  color: rgb(172, 13, 103);
+}
+
+
+#C-6 .blob-button {
+  background-color: rgb(172, 13, 103);
+  color: rgb(231 220 178);
+  margin-bottom: 2rem;
+}
+
+#C-6 .blob-button:hover {
+  --c: rgb(229, 217, 167);
+  color: rgb(172, 13, 103);
+}
+
+/* card 7 */
+#C-7 {
+  background-color: rgb(248 232 179);
+}
+
+#C-7 h3 {
+  width: 15rem;
+  margin: 0 auto;
+  color: #ff362b;
+}
+
+#C-7 .blob-button {
+  background-color: #ff362b;
+  color: rgb(231 220 178);
+  margin-bottom: 2rem;
+}
+
+#C-7 .blob-button:hover {
+  --c: rgb(229, 217, 167);
+  color: #e4342b;
+}
+
+/* card 8 */
+#C-8 {
+  background-color: #fdd595;
+}
+
+#C-8 h3 {
+  width: 15rem;
+  margin: 0 auto;
+  color: #ba507a;
+  margin-top: 5rem;
+}
+
+#C-8 .blob-button {
+  background-color: #ba507a;
+  color: rgb(231 220 178);
+  margin-bottom: 2rem;
+}
+
+#C-8 .blob-button:hover {
+  --c: #ddb77a;
+  color: #ba507a;
+}
+
+/* card 9 */
+#C-9 {
+  background-color: #cec278;
+}
+
+#C-9 h3 {
+  width: 15rem;
+  margin: 0 auto;
+  color: #0a8a4f;
+  margin-top: 5rem;
+  position: relative;
+  top: 3rem;
+}
+
+#C-9 .blob-button {
+  background-color: #0a8a4f;
+  color: #cec278;
+  margin-bottom: 2rem;
+  position: relative;
+  top: 2rem;
+}
+
+#C-9 .blob-button:hover {
+  --c: #cfbe52;
+  color: #0a8a4f;
+}
+
+/* card 10 */
+#C-10 {
+  background-color: #ffd28a;
+}
+
+#C-10 h3 {
+  width: 15rem;
+  margin: 0 auto;
+  color: #1e3555;
+  margin-top: 5rem;
+  position: relative;
+  top: 2rem;
+}
+
+#C-10 .blob-button {
+  background-color: #1e3555;
+  color: #ffd28a;
+  margin-bottom: 2rem;
+  position: relative;
+  top: 2rem;
+}
+
+#C-10 .blob-button:hover {
+  --c: #eab765;
+  color: #1e3555;
+}
+
+/* card 11 */
+#C-11 {
+  background-color: #ffc86f;
+}
+
+#C-11 h3 {
+  width: 15rem;
+  margin: 0 auto;
+  color: #ff362b;
+  margin-top: 5rem;
+  position: relative;
+  top: 1rem;
+}
+
+#C-11 .blob-button {
+  background-color: #ff362b;
+  color: #ffc86f;
+  margin-bottom: 2rem;
+  position: relative;
+  top: 0rem;
+}
+
+#C-11 .blob-button:hover {
+  --c: #eab052;
+  color: #ff362b;
+}
+
+/* card 12 */
+#C-12 {
+  background-color: #ffc6df;
+}
+
+#C-12 h3 {
+  width: 15rem;
+  margin: 0 auto;
+  color: #00ac78;
+  margin-top: 5rem;
+  position: relative;
+  top: 2rem;
+}
+
+#C-12 .blob-button {
+  background-color: #00ac78;
+  color: #ffc6df;
+  margin-bottom: 2rem;
+  position: relative;
+  top: 2rem;
+}
+
+#C-12 .blob-button:hover {
+  --c: #f6adcc;
+  color: #00ac78;
+}
+
+
+
+/* Filtering Logic */
+#new:checked~.Flavours-container .Flavour-card:not(.Has-marquee) {
+  display: none;
+}
+
+#all:checked~.Flavours-container .Flavour-card {
+  display: block;
+}
+
+
+#all:checked~.Flavours-header .Filter-btns label[for="all"],
+#new:checked~.Flavours-header .Filter-btns label[for="new"] {
+  background: var(--_color---light-blue);
+  color: var(--_color---blue);
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.pagination a,
+.pagination span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--_color---light-blue);
+  color: var(--_color---blue);
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 5rem;
+  bottom: 2.5rem;
+  position: relative;
+  left: 0.3rem;
+}
+
+.pagination .active {
+  background: var(--_color---neon-green);
+  color: var(--_color---blue);
+}
+
+.pagination .page:hover {
+  background: var(--_color---neon-green);
+  color: var(--_color---blue);
+}
+
+.pagination span:hover {
+  background: var(--_color---neon-green);
+  color: var(--_color---blue);
+}
+
+.scoop-online {
+  bottom: 3rem;
+}
+
+.footer {
+  margin-top: -48px;
+}
+
+
+
+
+/* Responsive */
+
+@media (min-width: 375px) {
+  .mobile-menu-content {
+    left: 16rem;
+
+  }
+
+}
+
+@media screen and (max-width:1200px) {
+
+  .navbar {
+    padding: 0px 0px;
+    width: 83%;
+    left: 51%;
+  }
+
+
+  .flavours-hero {
+    width: 100%;
+    height: 40vh;
+  }
+
+
+  .footer-video {
+    display: none;
+  }
+
+  .footer-logo {
+    display: none;
+  }
+
+}

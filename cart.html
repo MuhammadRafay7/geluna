@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Geluna Website - Cart</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/geluna_favicon.png">
+
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat&family=Cossette+Titre:wght@400;700&family=Delius&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Mulish:wght@200..1000&family=Oswald:wght@200..700&family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet">
+
+  <!------- Icon -------->
+
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+
+  <!-- Css Style Sheet Link  -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="flavour.css">
+  <link rel="stylesheet" href="cart.css">
+</head>
+
+<body>
+
+
+  <!-- NAVBAR -->
+
+  <header class="navbar">
+
+
+    <!-- Hamburger Menu Button -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="hamburger">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </label>
+
+    <!-- Left Links -->
+    <nav class="nav-left">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="flavour.html" class="nav-link">Flavour</a>
+    </nav>
+
+    <!-- Center Logo -->
+    <div class="logo-wrapper">
+      <div class="logo">
+        <img src="images/Logoo.png" alt="Geluna Logo">
+        <div class="pink-ball"></div>
+        <div class="ball-shadow"></div>
+      </div>
+    </div>
+
+    <!-- Right Links -->
+    <nav class="nav-right">
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="press.html" class="nav-link">Press</a>
+      <a href="cart.html" class="nav-link active">Cart</a>
+    </nav>
+
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu">
+      <div class="mobile-menu-content">
+        <a href="index.html" class="mobile-nav-link active">Home</a>
+        <a href="about.html" class="mobile-nav-link">About</a>
+        <a href="flavour.html" class="mobile-nav-link">Flavour</a>
+        <a href="contact.html" class="mobile-nav-link">Contact</a>
+        <a href="press.html" class="mobile-nav-link">Press</a>
+        <a href="cart.html" class="mobile-nav-link">Cart</a>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- Toggles -->
+  <input type="checkbox" id="cartToggle">
+  <input type="checkbox" id="removeToggle">
+
+  <!-- Open Cart button -->
+  <label for="cartToggle" class="open-btn">View Cart</label>
+
+  <!------- Explore button -------->
+  <div class="explore-btn">
+    <a href="flavour.html" class=" shop-btn highlight-btn button home-shop-now blob-button">
+      <span class="button-text slider">Explore More</span>
+      <span></span><span></span><span></span><span></span>
+    </a>
+  </div>
+
+  <!-- Overlay -->
+  <label for="cartToggle" class="cart-overlay"></label>
+
+  <!-- Cart panel -->
+  <aside class="cart-panel">
+    <label for="cartToggle" class="cart-close">✕</label>
+    <h3 class="cart-title">YOUR CART</h3>
+
+    <!-- Empty State -->
+    <div class="empty-state">
+      <p>Your cart is empty.</p>
+      <a href="flavour.html" class="continue-btn">Continue Shopping</a>
+    </div>
+
+    <!-- Filled State -->
+    <div class="filled-state">
+      <div class="items">
+
+        <!--------- Product item 1------->
+
+        <div class="cart-item">
+          <img src="images/strawberry_tub_card_1.png" alt="">
+          <div class="item-details">
+            <h4>STRAWBERRY CRUMBLE</h4>
+            <div class="price">$12.00 USD</div>
+            <label for="removeToggle" class="remove">Remove</label>
+          </div>
+          <div class="qty-control">
+            <input type="number" class="qty-input" value="4" min="1">
+          </div>
+
+        </div>
+
+        <!--------- Product item 2------->
+        <div class="cart-item">
+          <img src="images/blueberry_tub_card_5.png" alt="">
+          <div class="item-details">
+            <h4>HONEY BLUEBERRY LAVENDER</h4>
+            <div class="price">$12.00 USD</div>
+            <label for="removeToggle" class="remove">Remove</label>
+          </div>
+          <div class="qty-control">
+            <input type="number" class="qty-input" value="4" min="1">
+          </div>
+
+        </div>
+      </div>
+      <!------ Line ------>
+      <hr class="divider">
+      <div class="summary">
+        <div class="label">SUBTOTAL</div>
+        <div class="amount">$48.00 USD</div>
+      </div>
+
+      <!------ Checkout Button ----->
+      <a href="#" class="checkout-btn">Continue to Checkout</a>
+    </div>
+  </aside>
+
+</body>
+
+</html>
