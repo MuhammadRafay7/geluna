@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geluna Website - Contact</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/geluna_favicon.png">
+
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat&family=Cossette+Titre:wght@400;700&family=Delius&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Mulish:wght@200..1000&family=Oswald:wght@200..700&family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Css Style Sheet Link  -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+  <!-- NAVBAR -->
+
+  <header class="navbar">
+
+    <!-- Hamburger Menu Button -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="hamburger">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </label>
+
+
+    <!-- Left Links -->
+    <nav class="nav-left">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="flavour.html" class="nav-link">Flavour</a>
+    </nav>
+
+    <!-- Center Logo -->
+    <div class="logo-wrapper">
+      <div class="logo">
+        <img src="images/Logoo.png" alt="Geluna Logo">
+        <div class="pink-ball"></div>
+        <div class="ball-shadow"></div>
+      </div>
+    </div>
+
+    <!-- Right Links -->
+    <nav class="nav-right">
+      <a href="contact.html" class="nav-link active">Contact</a>
+      <a href="press.html" class="nav-link">Press</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+
+
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu">
+      <div class="mobile-menu-content">
+        <a href="index.html" class="mobile-nav-link active">Home</a>
+        <a href="about.html" class="mobile-nav-link">About</a>
+        <a href="flavour.html" class="mobile-nav-link">Flavour</a>
+        <a href="contact.html" class="mobile-nav-link">Contact</a>
+        <a href="press.html" class="mobile-nav-link">Press</a>
+        <a href="cart.html" class="mobile-nav-link">Cart</a>
+      </div>
+    </div>
+  </header>
+
+  <!------ Contact Section ------>
+
+
+  <section class="contact" id="contact" action="#thankyou">
+    <div class="contact-container">
+      <h2>Contact Us</h2>
+      <p>Have a question, want to chat, or just want to pop-off about how much you love our scoop? Drop us a line here!
+      </p>
+
+      <form class="contact-form">
+        <div class="name-fields">
+          <input type="text" name="firstName" placeholder="First Name" required>
+          <input type="text" name="lastName" placeholder="Last Name" required>
+        </div>
+
+        <input type="email" name="email" placeholder="Email" required>
+
+        <select name="subject" required>
+          <option value="">Subject </option>
+          <option value="General Inquiry">General Inquiry</option>
+          <option value="Product Support">Product Support</option>
+          <option value="Partnership">Partnership</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <textarea name="message" rows="5" placeholder="Message" required></textarea>
+
+        <!----- Send Button ----->
+        <a href="#" class="submit-btn highlight-btn button home-shop-now blob-button">
+          <span class="button-text slider">Send Message</span>
+          <span></span><span></span><span></span><span></span>
+        </a>
+      </form>
+    </div>
+  </section>
+
+
+
+  <!-------  Footer Section ------>
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Newsletter -->
+      <div class="footer-newsletter">
+        <h3>SUBSCRIBE TO OUR NEWSLETTER</h3>
+        <form action="#thanks" class="newsletter-form">
+          <input type="email" placeholder="Email address" required>
+          <button type="submit">SUBMIT</button>
+        </form>
+
+        <!-- Message box -->
+        <div id="thanks" class="thank-you-msg">
+          <span class="material-symbols-outlined">celebration</span> Your subscription is confirmed. Welcome aboard!.
+        </div>
+
+        <!-- Social Icons -->
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/" target="_blank"><img src="images/social_icon_1.png" alt="Instagram"></a>
+          <a href="https://www.tiktok.com" target="_blank"><img src="images/social_icon_2.png" alt="TikTok"></a>
+          <a href="https://www.facebook.com" target="_blank"><img src="images/social_icon_3.png" alt="YouTube"></a>
+          <a href="https://x.com" target="_blank"><img src="images/social_icon_4.png" alt="Twitter"></a>
+        </div>
+      </div>
+
+
+      <!-- Footer Links -->
+      <div class="footer-links">
+        <div class="footer-column">
+          <h4>MAIN PAGE</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="flavour.html">Flavour</a></li>
+            <li><a href="cart.html">Cart</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>COMPANY</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="press.html">Press</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Footer Bottom Logo + Credits -->
+    <div class="footer-bottom">
+      <img src="images/Footer_logo.png" alt="Geluna Logo" class="footer-logo">
+      <p>© 2025 Copyright – Glace Ice Cream. All Rights Reserved.
+
+      </p>
+    </div>
+
+
+
+    <!-- Footer video block -->
+    <div class="footer-video">
+      <video autoplay muted loop playsinline>
+        <source src="images/footer_video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+  </footer>
+
+
+
+</body>
+
+</html>

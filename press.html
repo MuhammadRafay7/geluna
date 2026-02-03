@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geluna Website - Press</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/geluna_favicon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat&family=Cossette+Titre:wght@400;700&family=Delius&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Mulish:wght@200..1000&family=Oswald:wght@200..700&family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet">
+
+
+  <!------- Icon -------->
+
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="press.css">
+  <link rel="stylesheet" href="flavour.css">
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+
+    <!-- Hamburger Menu Button -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="hamburger">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </label>
+
+    <nav class="nav-left">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="flavour.html" class="nav-link">Flavour</a>
+    </nav>
+
+    <div class="logo-wrapper">
+      <div class="logo">
+        <img src="images/Logoo.png" alt="Geluna Logo">
+        <div class="pink-ball"></div>
+        <div class="ball-shadow"></div>
+      </div>
+    </div>
+
+    <nav class="nav-right">
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="press.html" class="nav-link active">Press</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu">
+      <div class="mobile-menu-content">
+        <a href="index.html" class="mobile-nav-link active">Home</a>
+        <a href="about.html" class="mobile-nav-link">About</a>
+        <a href="flavour.html" class="mobile-nav-link">Flavour</a>
+        <a href="contact.html" class="mobile-nav-link">Contact</a>
+        <a href="press.html" class="mobile-nav-link">Press</a>
+        <a href="cart.html" class="mobile-nav-link">Cart</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- PRESS SECTION -->
+  <section class="Press-section">
+    <div class="Press-container">
+
+      <!-- Radio Buttons -->
+      <input type="radio" name="press-slider" id="Press1" checked>
+      <input type="radio" name="press-slider" id="Press2">
+      <input type="radio" name="press-slider" id="Press3">
+      <input type="radio" name="press-slider" id="Press4">
+      <input type="radio" name="press-slider" id="Press5">
+      <input type="radio" name="press-slider" id="Press6">
+
+      <!-- Slides -->
+
+      <!-------- Slide 1 -------->
+      <div class="Press-slides">
+        <div class="Press-slide">
+          <div class="Press-text">
+            <p class="Date">FEBRUARY 28 • FACTS</p>
+            <h2>SOURCING THE FINEST INGREDIENTS</h2>
+          </div>
+          <div class="Press-image">
+            <img src="images/press_img_1.png" alt="Press 1">
+          </div>
+        </div>
+
+        <!-------- Slide 2 -------->
+        <div class="Press-slide">
+          <div class="Press-text">
+            <p class="Date">MARCH 12 • REVIEW</p>
+            <h2>FEATURED IN FOOD JOURNAL</h2>
+          </div>
+          <div class="Press-image">
+            <img src="images/press_img_2.png" alt="Press 2">
+          </div>
+        </div>
+
+        <!-------- Slide 3 -------->
+        <div class="Press-slide">
+          <div class="Press-text">
+            <p class="Date">APRIL 7 • MAGAZINE</p>
+            <h2>CELEBRATING GELUNA FLAVOURS</h2>
+          </div>
+          <div class="Press-image">
+            <img src="images/press_img_3.png" alt="Press 3">
+          </div>
+        </div>
+
+        <!-------- Slide 4 -------->
+        <div class="Press-slide">
+          <div class="Press-text">
+            <p class="Date">MAY 15 • FEATURE</p>
+            <h2>A SCOOP ABOVE THE REST</h2>
+          </div>
+          <div class="Press-image">
+            <img src="images/press_img_4.png" alt="Press 4">
+          </div>
+        </div>
+
+        <!-------- Slide 5 -------->
+        <div class="Press-slide">
+          <div class="Press-text">
+            <p class="Date">JUNE 20 • INTERVIEW</p>
+            <h2>THE STORY BEHIND GELUNA</h2>
+          </div>
+          <div class="Press-image">
+            <img src="images/press_img_5.png" alt="Press 5">
+          </div>
+        </div>
+
+        <!-------- Slide 6 -------->
+        <div class="Press-slide">
+          <div class="Press-text">
+            <p class="Date">JULY 30 • BLOG</p>
+            <h2>ICE CREAM FOR EVERY SEASON</h2>
+          </div>
+          <div class="Press-image">
+            <img src="images/press_img_6.png" alt="Press 6">
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation (Prev/Next) -->
+      <div class="Press-navigation">
+        <!-- Slide 1 -->
+        <label for="Press6" class="Prev Prev1">&#10094;</label>
+        <label for="Press2" class="Next Next1">&#10095;</label>
+
+        <!-- Slide 2 -->
+        <label for="Press1" class="Prev Prev2">&#10094;</label>
+        <label for="Press3" class="Next Next2">&#10095;</label>
+
+        <!-- Slide 3 -->
+        <label for="Press2" class="Prev Prev3">&#10094;</label>
+        <label for="Press4" class="Next Next3">&#10095;</label>
+
+        <!-- Slide 4 -->
+        <label for="Press3" class="Prev Prev4">&#10094;</label>
+        <label for="Press5" class="Next Next4">&#10095;</label>
+
+        <!-- Slide 5 -->
+        <label for="Press4" class="Prev Prev5">&#10094;</label>
+        <label for="Press6" class="Next Next5">&#10095;</label>
+
+        <!-- Slide 6 -->
+        <label for="Press5" class="Prev Prev6">&#10094;</label>
+        <label for="Press1" class="Next Next6">&#10095;</label>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Latest Post Section -->
+  <section class="latest-post">
+
+    <!-- White wave top -->
+    <div class="wave-wrapper_2"> <img src="images/white_wave.png" alt="Wave" class="wave-item"> <img
+        src="images/white_wave.png" alt="Wave" class="wave-item"> <img src="images/white_wave.png" alt="Wave"
+        class="wave-item"> <img src="images/white_wave.png" alt="Wave" class="wave-item"> </div>
+    <div class="wrap">
+
+      <h2 class="latest-title">LATEST POST</h2>
+
+      <!-- Filter Buttons -->
+      <div class="filter-buttons">
+        <button class="btn active">ALL</button>
+        <button class="btn">IDEAS</button>
+        <button class="btn">FACTS</button>
+        <button class="btn">NEWS</button>
+      </div>
+    </div>
+
+    <!-- Blog / Press Section -->
+    <section class="press-section">
+      <div class="cards-container">
+        <!-- Card 1 -->
+        <div class="blog-card"> <img src="images/press_img_1.jpg" alt="Blog 1">
+          <div class="date">Feb 28</div>
+          <div class="card-content">
+            <h3>SOURCING THE FINEST INGREDIENTS</h3>
+            <div class="line"></div>
+            <div class="category">Facts</div>
+            <p>Discover how we carefully source only the highest quality ingredients to ensure excellence in every
+              creation.</p> <a href="press.html" class=" read-btn button home-shop-now blob-button"> <span
+                class="button-text slider">Read More</span> <span></span><span></span><span></span><span></span> </a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="blog-card"> <img src="images/press_img_2.png" alt="Blog 2">
+          <div class="date">Mar 26</div>
+          <div class="card-content">
+            <h3>OUR NEWEST SEASONAL CREATION</h3>
+            <div class="line"></div>
+            <div class="category">News</div>
+            <p>We are excited to introduce our newest seasonal creation, crafted with flavors that celebrate the season.
+            </p> <a href="press.html" class=" read-btn button home-shop-now blob-button"> <span
+                class="button-text slider">Read More</span> <span></span><span></span><span></span><span></span> </a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="blog-card"> <img src="images/press_img_3.jpg" alt="Blog 3">
+          <div class="date">Mar 20</div>
+          <div class="card-content">
+            <h3>ELEVATE YOUR DESSERT GAMES</h3>
+            <div class="line"></div>
+            <div class="category">Ideas</div>
+            <p>Learn creative ways to bring elegance and excitement to your dessert presentations like never before.</p>
+            <a href="press.html" class=" read-btn button home-shop-now blob-button"> <span
+                class="button-text slider">Read More</span> <span></span><span></span><span></span><span></span> </a>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="blog-card"> <img src="images/press_img_4(2).png" alt="Blog 4">
+          <div class="date">Jan 12 </div>
+          <div class="card-content">
+            <h3>FLAVORS THAT INSPIRE</h3>
+            <div class="line"></div>
+            <div class="category">Products</div>
+            <p>Discover our signature tubs, crafted with love and bursting with flavors for every mood.</p>
+            <a href="press.html" class=" read-btn button home-shop-now blob-button"> <span
+                class="button-text slider">Read More</span> <span></span><span></span><span></span><span></span> </a>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="blog-card"> <img src="images/press_img_5.jpeg" alt="Blog 5">
+          <div class="date">Feb 08 </div>
+          <div class="card-content">
+            <h3>THE GELUNA TRUCK</h3>
+            <div class="line"></div>
+            <div class="category">Events</div>
+            <p>Bringing sweet joy on wheels—our pink truck spreads happiness wherever it goes.</p>
+            <a href="press.html" class=" read-btn button home-shop-now blob-button"> <span
+                class="button-text slider">Read More</span> <span></span><span></span><span></span><span></span> </a>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="blog-card"> <img src="images/press_img_6.jpg" alt="Blog 6">
+          <div class="date">>Mar 15</div>
+          <div class="card-content">
+            <h3>SCOOPS OF HAPPINESS</h3>
+            <div class="line"></div>
+            <div class="category">Lifestyle</div>
+            <p>Indulge in creamy scoops that turn everyday moments into joyful celebrations.</p>
+            <a href="press.html" class=" read-btn button home-shop-now blob-button"> <span
+                class="button-text slider">Read More</span> <span></span><span></span><span></span><span></span> </a>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="blog-card"> <img src="images/press_img_7.png" alt="Blog 7">
+          <div class="date">Apr 20</div>
+          <div class="card-content">
+            <h3>STACKED PERFECTION</h3>
+            <div class="line"></div>
+            <div class="category">Ideas</div>
+            <p>A colorful tower of flavors designed to make your dessert experience extra special.</p>
+            <a href="press.html" class=" read-btn button home-shop-now blob-button"> <span
+                class="button-text slider">Read More</span> <span></span><span></span><span></span><span></span> </a>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="blog-card"> <img src="images/press_img_8.jpg" alt="Blog 8">
+          <div class="date">May 10</div>
+          <div class="card-content">
+            <h3>RETRO SWEET VIBES</h3>
+            <div class="line"></div>
+            <div class="category">Stories</div>
+            <p>Step into nostalgia with playful fashion and timeless ice cream indulgence.</p>
+            <a href="press.html" class=" read-btn button home-shop-now blob-button"> <span
+                class="button-text slider">Read More</span> <span></span><span></span><span></span><span></span> </a>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="blog-card"> <img src="images/press_img_9.jpg" alt="Blog 9">
+          <div class="date">Jun 18</div>
+          <div class="card-content">
+            <h3>THE ART OF SCOOPING</h3>
+            <div class="line"></div>
+            <div class="category">Behind the Scenes</div>
+            <p>From the freezer to your cone—see the craft and care that goes into every scoop.</p>
+            <a href="press.html" class=" read-btn button home-shop-now blob-button"> <span
+                class="button-text slider">Read More</span> <span></span><span></span><span></span><span></span> </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--------- Pagination ------>
+    <div class="pagination">
+      <a href="#" class="prev page"><span class="material-symbols-outlined">arrow_back_ios</span></a>
+      <a href="#" class="page active">1</a>
+      <a href="#" class="page">2</a>
+      <a href="#" class="page">3</a>
+      <a href="#" class="page">4</a>
+      <span class="dots page">...</span>
+      <a href="#" class="page">8</a>
+      <a href="#" class="next page"><span class="material-symbols-outlined">arrow_forward_ios</span></a>
+    </div>
+  </section>
+
+  <!------------ Footer Section ---------->
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Newsletter -->
+      <div class="footer-newsletter">
+        <h3>SUBSCRIBE TO OUR NEWSLETTER</h3>
+        <form action="#thanks" class="newsletter-form">
+          <input type="email" placeholder="Email address" required>
+          <button type="submit">SUBMIT</button>
+        </form>
+
+        <!-- Message box -->
+        <div id="thanks" class="thank-you-msg">
+          <span class="material-symbols-outlined">celebration</span> Your subscription is confirmed. Welcome aboard!.
+        </div>
+
+        <!-- Social Icons -->
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/" target="_blank"><img src="images/social_icon_1.png" alt="Instagram"></a>
+          <a href="https://www.tiktok.com" target="_blank"><img src="images/social_icon_2.png" alt="TikTok"></a>
+          <a href="https://www.facebook.com" target="_blank"><img src="images/social_icon_3.png" alt="YouTube"></a>
+          <a href="https://x.com" target="_blank"><img src="images/social_icon_4.png" alt="Twitter"></a>
+        </div>
+      </div>
+
+
+      <!-- Footer Links -->
+      <div class="footer-links">
+        <div class="footer-column">
+          <h4>MAIN PAGE</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="flavour.html">Flavour</a></li>
+            <li><a href="cart.html">Cart</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>COMPANY</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="press.html">Press</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Footer Bottom Logo + Credits -->
+    <div class="footer-bottom">
+      <img src="images/Footer_logo.png" alt="Geluna Logo" class="footer-logo">
+      <p>© 2025 Copyright – Glace Ice Cream. All Rights Reserved.
+
+      </p>
+    </div>
+
+
+
+    <!-- Footer video block -->
+    <div class="footer-video">
+      <video autoplay muted loop playsinline>
+        <source src="images/footer_video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+  </footer>
+
+
+</body>
+
+</html>
